@@ -1,0 +1,1 @@
+# sparkle-session-swift
