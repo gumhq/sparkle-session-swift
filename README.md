@@ -1,4 +1,4 @@
-# sparkle-session-swift
+# Gum Sparkle Session
 
 Session Keys are ephemeral keys with fine grained program/instruction scoping for tiered access in your Solana Programs. Session Keys enables application developers to build smooth and seemless user experience by getting rid of the wallet popups.
 
