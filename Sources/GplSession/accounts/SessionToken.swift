@@ -16,7 +16,7 @@ import Solana
 * @category generated
 */
 public protocol SessiontokenArgs {
-    
+
      var authority: PublicKey { get }
      var targetProgram: PublicKey { get }
      var sessionSigner: PublicKey { get }
@@ -31,7 +31,7 @@ public protocol SessiontokenArgs {
  * @category generated
  */
 public struct Sessiontoken: SessiontokenArgs {
-  
+
 
   public let authority: PublicKey
   public let targetProgram: PublicKey
@@ -137,7 +137,7 @@ public struct Sessiontoken: SessiontokenArgs {
    */
   public let sessionTokenBeet = BeetStruct(
     fields:[
-        
+
         ("authority", (.init(value: .scalar(BeetPublicKey())))),
         ("targetProgram", (.init(value: .scalar(BeetPublicKey())))),
         ("sessionSigner", (.init(value: .scalar(BeetPublicKey())))),

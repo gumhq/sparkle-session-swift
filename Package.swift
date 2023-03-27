@@ -1,12 +1,13 @@
 // swift-tools-version: 5.5.0
 import PackageDescription
 let package = Package(
-    name: "gpl_session",
+    name: "GplSession",
     platforms: [.iOS(.v11), .macOS(.v10_12)],
-        products: [
-            .library(
-                name: "gpl_session",
-                targets: ["gpl_session"]),
+    products: [
+        .library(
+            name: "GplSession",
+            targets: ["GplSession"]
+        ),
     ],
     dependencies: [
         .package(url: "https://github.com/metaplex-foundation/solita-swift.git", branch: "main"),
@@ -14,10 +15,15 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "gpl_session",
+            name: "GplSession",
             dependencies: [
                 "Beet",
-                .product(name: "BeetSolana", package: "solita-swift")
-            ]),
+                .product(name: "BeetSolana", package: "solita-swift"),
+            ]
+        ),
+        .testTarget(
+            name: "GplSessionTests",
+            dependencies: ["GplSession"]
+        ),
     ]
 )
